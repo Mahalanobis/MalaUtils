@@ -1,12 +1,12 @@
-data_preprocess <- function(	XT,                                 # training X set
+data_preprocess <- function(  XT,                                 # training X set
                               XS,                                 # test X set
                               YT,                                 # training Y traget
                               miss.cutoff = 0.995,                # % of max missing values
                               num.min.lvs = 7,                    # min number of unique values for numeric feats
                               rare.cutoff = ceiling( nrow(XT)*0.01 ), # min freq for categorical feats
-								              cat.trans="None",                   # categorical transformation options
-								              num.trans="None",                   # numeric transformation options
-								              num.miss="None"){                   # impute missing values 
+			      cat.trans="None",                   # categorical transformation options
+			      num.trans="None",                   # numeric transformation options
+			      num.miss="None"){                   # impute missing values 
 
 
 								
